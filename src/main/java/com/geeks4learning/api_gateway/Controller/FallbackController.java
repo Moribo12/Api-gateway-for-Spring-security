@@ -29,5 +29,9 @@ public class FallbackController {
     public String userManagementServiceFallBack(){
         return "The User-Management-Service is currently down!";
     }
+    @GetMapping("/authenticationServiceFallBack")
+    public String authenticationServiceFallBack(){
+        return "The Authentication-Service is currently down!";
+    }
 
 }
